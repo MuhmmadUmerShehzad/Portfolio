@@ -1,0 +1,9 @@
+@keyframes bgOpacity {
+  from {
+    z-index: 100;
+  }
+
+  to {
+    z-index: -1;
+  }
+}

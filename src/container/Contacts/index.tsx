@@ -1,0 +1,179 @@
+import React, { useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
+import { Text, Box } from "./styled";
+import emailjs from "@emailjs/browser";
+import secrets from "../../secrets";
+import data from "../../helper/contacts.json";
+import social from "../../helper/social.json";
+import TextField from "@material-ui/core/TextField";
+import Button from "../../components/Button";
+import Notice from "../../components/Notice";
+
+emailjs.init({
+  publicKey: secrets.USER_ID,
+});
+
+const Contacts: React.FC = () => {
+  const [firstName, setFIrstName] = useState("");
+  const [notice, setNotice] = useState<Notice>({
+    content: "",
+    type: "SUCCESS",
+  });
+  const [visible, setVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [lastName, setLastName] = useState("");
+  const [message, setMessage] = useState(data.sample);
+  const [email, setEmail] = useState("");
+  const resetForm = () => {
+    setFIrstName("");
+    setLastName("");
+    setMessage("Hello M Umer Shehzad ...");
+    setEmail("");
+    setIsLoading(false);
+    setTimeout(() => {
+      setVisible(false);
+    }, 2000);
+  };
+  const handleSubmit = () => {
+    setIsLoading(true);
+    if (firstName.trim() !== "" && email.trim() !== "") {
+      const templateParams = {
+        to_name: "Me",
+        name: firstName + " " + lastName,
+        message: message,
+        email: email,
+        title: "New Message from Portfolio",
+      };
+      emailjs
+        .send(secrets.SERVICE_ID, secrets.TEMPLATE_ID, templateParams)
+        .then(() => {
+          setVisible(true);
+          setNotice({
+            content:
+              "Thank you for your interest, I will be back to you in the next few minutes",
+            type: "SUCCESS",
+            visible,
+          });
+          resetForm();
+        })
+        .catch((err) => {
+          console.error("EmailJS Error:", err);
+          setVisible(true);
+          setNotice({
+            content:
+              "An error occured, please try again later",
+            type: "ERROR",
+            visible,
+          });
+          setTimeout(() => {
+            setVisible(false);
+          }, 2000);
+          setIsLoading(false);
+        });
+    } else {
+      setVisible(true);
+      setNotice({
+        content:
+          "Kindly put atleast your first name and your email address",
+        type: "ERROR",
+        visible,
+      });
+      setTimeout(() => {
+        setVisible(false);
+      }, 2000);
+      setIsLoading(false);
+    }
+  };
+  return (
+    <Box id="contacts">
+      <Notice visible={visible} content={notice.content} type={notice.type} />
+      <Container fluid>
+        <Row className="d-flex align-items-center justify-content-center">
+          <Col lg={"4"} className="px-3 px-md-5">
+            <Text>{data.intro}</Text>
+          </Col>
+          <Col lg={"8"} className="px-3 px-md-5">
+            <Row>
+              <Col lg={"6"}>
+                <TextField
+                  fullWidth
+                  style={{ margin: "15px 0" }}
+                  id="first-name"
+                  name="firstName"
+                  label="First Name *"
+                  value={firstName}
+                  onChange={(e) => setFIrstName(e.target.value)}
+                />
+              </Col>
+              <Col lg={"6"}>
+                <TextField
+                  style={{ margin: "15px 0" }}
+                  fullWidth
+                  id="last-name"
+                  name="lasttName"
+                  label="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </Col>
+            </Row>
+            <TextField
+              style={{ margin: "15px 0" }}
+              fullWidth
+              id="email"
+              name="email"
+              label="Email *"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <TextField
+              fullWidth
+              style={{ margin: "15px 0" }}
+              id="message"
+              name="message"
+              label="Message"
+              multiline
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <a onClick={handleSubmit}>
+              <Button
+                title={isLoading ? "Sending ..." : data["button-title"]}
+              />
+            </a>
+          </Col>
+        </Row>
+        <div
+          style={{
+            height: 0.5,
+            margin: "150px 0 35px 0",
+            backgroundColor: "#DFE1E6",
+          }}
+        ></div>
+        <div className="d-flex align-items-center justify-content-center">
+          {social.social.map((i) => (
+            <h2 className="mx-3" key={i.class}>
+              <a href={i.link} target="_blank" rel="noreferrer">
+                <i
+                  style={{ color: "#505F79", fontSize: 20 }}
+                  className={i.class}
+                ></i>
+              </a>
+            </h2>
+          ))}
+        </div>
+        <div className="d-flex align-items-center justify-content-center">
+          {social.social[0].link === "https://github.com/MuhammadUmerShehzad" ? (
+            <p></p>
+          ) : (
+            <p>
+              Copyright © 2026 Muhammad Umer Shehzad
+            </p>
+          )}
+        </div>
+      </Container>
+    </Box>
+  );
+};
+
+export default Contacts;

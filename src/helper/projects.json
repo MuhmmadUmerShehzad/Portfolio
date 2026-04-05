@@ -1,0 +1,84 @@
+{
+  "title": "My Projects",
+  "projects": [
+    {
+      "id": 1,
+      "title": "Kitchen Chaos",
+      "description": "A fast-paced, Unity-based cooking simulation game featuring sprite, animation, and sound asset integration.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Unity-Project-1",
+      "imgUrl": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Unity",
+        "C#",
+        "Game Design"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dodge the Ball",
+      "description": "Survive waves of enemy balls chasing you on a platform. Features AI behavior and physics-based interactions.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Dodge-the-Ball",
+      "imgUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Unity",
+        "C#",
+        "AI Scripting",
+        "Game Physics"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Lunar Lander",
+      "description": "2D space game where players control a lander navigating multiple levels while managing fuel.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Unity-Game-05",
+      "imgUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Unity",
+        "2D Navigation",
+        "C#"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Spotify-Clone",
+      "description": "Responsive music player built with HTML, CSS, and JavaScript. Features playlists and audio controls.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/HTML-CSS-JavaScript",
+      "imgUrl": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Password-Manager",
+      "description": "Secure and responsive password manager application built with React and Vite.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Password-Manager-React-App",
+      "imgUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "React",
+        "Vite",
+        "TypeScript"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "TodoList",
+      "description": "Minimal React/Vite/TypeScript task manager with Hot Module Replacement and ESLint integration.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/React-Vite-App",
+      "imgUrl": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "React",
+        "TypeScript",
+        "Prettier"
+      ]
+    }
+  ]
+}

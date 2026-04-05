@@ -1,0 +1,62 @@
+{
+  "description": "Fullstack Software Engineer specializing in Unity 3D Game Development and Web Development. I design and develop interactive 3D mechanics and scalable web solutions. With hands-on experience in C#, Unity Engine, React.js, and Node.js, I bridge the gap between immersive game design and robust full-stack web applications. Currently pursuing a Bachelor's in CS at PIEAS.",
+  "resumeUrl": "#",
+  "skills": {
+    "languages": {
+      "icon": "fas fa-code",
+      "techs": ["C#", "JavaScript", "HTML", "CSS", "SQL", "TypeScript"]
+    },
+    "frameWorks": {
+      "icon": "fas fa-terminal",
+      "techs": [
+        "Unity Engine",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Vite",
+        "MongoDB",
+        "MySQL"
+      ]
+    },
+    "skills": {
+      "icon": "fas fa-code-branch",
+      "techs": [
+        "Game Optimization",
+        "AI Scripting",
+        "RESTful APIs",
+        "Git",
+        "Docker",
+        "Git Actions"
+      ]
+    }
+  },
+  "education": {
+    "degree": "Bachelor of Computer and Information Sciences",
+    "years": "Sep 2023 - Sep 2027",
+    "institution": "Pakistan Institute of Engineering and Applied Sciences, Islamabad",
+    "details": "Relevant Courses: OOP, DSA, Software Engineering, Algorithm Analysis, Calculus, Linear Algebra, Intro to AI, Intro to Computer Vision, Databases."
+  },
+  "certifications": [
+    "Unity 3D Game Development",
+    "C# for Games",
+    "Game Physics & Animation Fundamentals",
+    "GameCraft Bootcamp",
+    "Create with Code (Unity)",
+    "Full Stack Web Development",
+    "Docker & Containerization"
+  ],
+  "awards": [
+    {
+      "role": "Game DEV Lead",
+      "org": "PIEAS AI Society"
+    },
+    {
+      "role": "Outreach Co-Lead",
+      "org": "GDGoC PIEAS"
+    },
+    {
+      "role": "Graphic Designer",
+      "org": "AWS Cloud Club"
+    }
+  ]
+}
