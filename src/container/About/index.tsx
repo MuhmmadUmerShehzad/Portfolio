@@ -68,7 +68,7 @@ const About: React.FC = () => {
               <Col lg={"6"}>
                 <span
                   onClick={() => {
-                    const links = ["/Web_CV.pdf", "/Game_dev_CV.pdf"];
+                    const links = ["/CV_AllInOne.pdf"];
                     links.forEach((href) => {
                       const a = document.createElement("a");
                       a.href = href;

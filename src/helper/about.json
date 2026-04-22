@@ -1,15 +1,16 @@
 {
-  "description": "Fullstack Software Engineer specializing in Unity 3D Game Development and Web Development. I design and develop interactive 3D mechanics and scalable web solutions. With hands-on experience in C#, Unity Engine, React.js, and Node.js, I bridge the gap between immersive game design and robust full-stack web applications. Currently pursuing a Bachelor's in CS at PIEAS.",
+  "description": "Fullstack Software Engineer specializing in Unity 3D Game Development, Web Development, and Natural Language Processing (NLP). I design and develop interactive 3D mechanics, scalable web solutions, and AI-driven models. With hands-on experience in C#, Python, Unity Engine, ASP.NET, React.js, and Node.js, I bridge the gap between immersive game design, robust full-stack applications, and intelligent NLP systems. Currently pursuing a Bachelor's in CS at PIEAS.",
   "resumeUrl": "#",
   "skills": {
     "languages": {
       "icon": "fas fa-code",
-      "techs": ["C#", "JavaScript", "HTML", "CSS", "SQL", "TypeScript"]
+      "techs": ["C#", "Python", "JavaScript", "HTML", "CSS", "SQL", "TypeScript", "VB.NET"]
     },
     "frameWorks": {
       "icon": "fas fa-terminal",
       "techs": [
         "Unity Engine",
+        "ASP.NET / Blazor",
         "React.js",
         "Node.js",
         "Express.js",
@@ -21,6 +22,8 @@
     "skills": {
       "icon": "fas fa-code-branch",
       "techs": [
+        "Natural Language Processing",
+        "Machine Learning",
         "Game Optimization",
         "AI Scripting",
         "RESTful APIs",

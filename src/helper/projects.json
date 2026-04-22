@@ -79,6 +79,97 @@
         "TypeScript",
         "Prettier"
       ]
+    },
+    {
+      "id": 7,
+      "title": "AR 3D Model Generation",
+      "description": "AR pipeline for generating and loading 3D models from captured images dynamically within Unity.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Unity-AR-3D-Model-Generation-",
+      "imgUrl": "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Unity",
+        "AR",
+        "3D Modeling"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Urdu Hate Speech Detection",
+      "description": "Benchmarking traditional and neural models on NUHONS dataset for Nastaliq Urdu hate-speech detection.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Urdu-Hate-Speech-Detection---NUHONS-Dataset",
+      "imgUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Python",
+        "NLP",
+        "Machine Learning"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Urdu Fake News Detection",
+      "description": "N-Gram language modeling and custom Naive Bayes classifier from scratch to identify Urdu fake news.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/N-Gram-Language-Models-and-Urdu-Fake-News-Detection",
+      "imgUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Python",
+        "NLP",
+        "N-Grams"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Eliza Chatbot",
+      "description": "Rule-based conversational agent mimicking ELIZA, tailored as a mental health support therapist.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/NLP_01",
+      "imgUrl": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Python",
+        "NLP",
+        "Rule-based AI"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Urdu Tokenization",
+      "description": "Custom tokenization and sentence segmentation for informal, Nastaliq Urdu text tackling script issues.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/NLP_01",
+      "imgUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Python",
+        "NLP",
+        "Text Processing"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "PVFC Order Management",
+      "description": "E-commerce order management system with Customer Segmentation and Business Intelligence.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/Furniture-Company-Website",
+      "imgUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "ASP.NET",
+        "VB.NET",
+        "SQL Server"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Quiz Management System",
+      "description": "Web-based quiz system with role-based access for teachers and students, supporting timed assessments.",
+      "live_link": "#",
+      "github_link": "https://github.com/MuhmmadUmerShehzad/QuizManagementSystem",
+      "imgUrl": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=400&q=80",
+      "techs": [
+        "Blazor",
+        "C#",
+        "SQL Server"
+      ]
     }
   ]
 }
